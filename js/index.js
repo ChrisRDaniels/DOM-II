@@ -61,4 +61,20 @@ navFocus.addEventListener('focus', event => {
  window.addEventListener('resize', event => {
       const changeTitle = document.querySelector('.logo-heading');
       changeTitle.textContent="ALL ABOARD!!!"
-    })
+    });
+
+// #9 Scroll
+
+document.querySelector(".footer p").addEventListener("wheel", myFunction);
+
+function myFunction() {
+  this.style.fontSize = "35px";
+};
+
+ // #10 Copy
+
+document.querySelector(".destination p").addEventListener("copy", thisFunction);
+
+function thisFunction() {
+  alert("You copied text!");
+}
