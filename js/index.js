@@ -78,3 +78,9 @@ document.querySelector(".destination p").addEventListener("copy", thisFunction);
 function thisFunction() {
   alert("You copied text!");
 }
+
+
+// prevent default on nav links
+document.querySelector("nav-link").addEventListener("click", event =>{
+    event.preventDefault()
+  });
